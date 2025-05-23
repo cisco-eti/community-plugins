@@ -19,8 +19,8 @@ import useStyles from './useStyles';
 import { useHeaderStyles } from './useHeaderStyles';
 import MoreInfoIcon from '../icons/more-info.svg';
 import './App.css';
-import { Box } from '@material-ui/core';
-import { IconButton } from '@material-ui/core';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
 
 interface ChatHeaderProps {
   clearChat: () => void;

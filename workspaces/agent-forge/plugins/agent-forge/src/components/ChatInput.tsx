@@ -16,7 +16,7 @@
 import React from 'react';
 import sendIcon from '../icons/send-icon.svg';
 import useStyles from './useStyles';
-import { IconButton } from '@material-ui/core';
+import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 
 interface ChatInputProps {
@@ -63,6 +63,7 @@ function ChatInput({
           borderWidth: '2px',
           borderColor: '#889099',
           borderStyle: 'solid',
+          color: '#000',
         },
         endAdornment: (
           <IconButton
