@@ -36,10 +36,12 @@ import {
 } from '../utils';
 import { ChatbotApi } from '../apis';
 import { useObservable } from 'react-use';
-import { ThemeMode } from '@internal/backstage-plugin-cisco-components';
 import { v4 as uuidv4 } from 'uuid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+
+// eslint-disable-next-line
+import process from 'process';
 
 interface IChatFeedback {
   [key: number]: Feedback;
@@ -424,7 +426,7 @@ function ChatAssistantApp() {
   return (
     <div
       className={`App ${
-        activeThemeId === ThemeMode.DARK ? styles.darkMode : styles.lightMode
+        activeThemeId === 'dark' ? styles.darkMode : styles.lightMode
       }`}
     >
       <div
